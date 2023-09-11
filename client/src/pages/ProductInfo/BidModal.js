@@ -26,7 +26,7 @@ function BidModal({ showBidModal, setShowBidModal, product, reloadData }) {
         // send notification to seller
         await AddNotification({
           title: "A new bid has been placed",
-          message: `A new bid has been placed on your product ${product.name} by ${user.name} for $ ${values.bidAmount}`,
+          message: `A new bid has been placed on your product ${product.name} by ${user.name} for ₹ ${values.bidAmount}`,
           user: product.seller._id,
           onClick: `/profile`,
           read: false,

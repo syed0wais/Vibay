@@ -11,6 +11,11 @@
 }
 
 
+/* to make desktop site in mobile browser
+ body {
+  min-width: 960px;
+} */
+
 input , select , textarea{
   min-height: 45px !important;
   border: 1px solid #b9b9b9 !important;

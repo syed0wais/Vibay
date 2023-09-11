@@ -97,7 +97,7 @@ function ProductInfo() {
               </h1>
               <div className="flex justify-between mt-2">
                 <span>Price</span>
-                <span>$ {product.price}</span>
+                <span>₹ {product.price}</span>
               </div>
               <div className="flex justify-between mt-2">
                 <span>Category</span>
@@ -166,7 +166,7 @@ function ProductInfo() {
                       </div>
                       <div className="flex justify-between text-gray-600">
                         <span>Bid Amount</span>
-                        <span> $ {bid.bidAmount}</span>
+                        <span> ₹ {bid.bidAmount}</span>
                       </div>
                       <div className="flex justify-between text-gray-600">
                         <span>Bid Place On</span>
