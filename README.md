@@ -1,6 +1,5 @@
 # Vibay
 Steps to run:
-
 #### Server:
 Root folder:   
 ```npm i```   
