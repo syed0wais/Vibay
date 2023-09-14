@@ -1,7 +1,12 @@
 # Vibay
 Steps to run:
-## Server:
-Inside the root folder run nodemon server/server.js
 
-## Client:
-inside client folder npm run start
+#### Server:
+Root folder: 
+```npm i```
+```nodemon server/server.js```
+
+#### Client:
+Client folder:
+```npm i```
+ ```npm run start```
