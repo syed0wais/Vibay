@@ -13,6 +13,6 @@ Client folder:
 
 ## Contributors
 <a href = "https://github.com/syed0wais/Vibay/graphs/contributors">
-  <img src = "https://contrib.rocks/image?repo = syed0wais/Vibay"/>
+  <img src = "https://contrib.rocks/image?repo=syed0wais/Vibay"/>
 </a>
 
