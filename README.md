@@ -10,8 +10,9 @@ Client folder:
 ```npm i```  
  ```npm run start```
 
-<a href = "https://github.com/Tanu-N-Prabhu/Python/graphs/contributors">
-  <img src = "https://contrib.rocks/image?repo = GitHub_username/repository_name"/>
+
+## Contributors
+<a href = "https://github.com/syed0wais/Vibay/graphs/contributors">
+  <img src = "https://contrib.rocks/image?repo = syed0wais/Vibay"/>
 </a>
 
-Made with [contributors-img](https://contrib.rocks)
