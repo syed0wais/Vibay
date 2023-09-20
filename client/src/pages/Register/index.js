@@ -6,12 +6,49 @@ import { RegisterUser } from "../../apicalls/users";
 import { SetLoader } from "../../redux/loadersSlice";
 import { useDispatch } from "react-redux";
 
+
+// Custom validation rule function
+const validateEmailDomain = (rule, value) => {
+  if (!value) {
+    return Promise.reject('Please enter your email address');
+  }
+
+  // Define the allowed email domain(s)
+  const allowedDomain = 'vitstudent.ac.in'; //  desired domain
+
+  // Extract the domain from the email
+  const emailParts = value.split('@');
+  const domain = emailParts[emailParts.length - 1];
+
+  // Check if the domain matches the allowed domain
+  if (domain.toLowerCase() !== allowedDomain.toLowerCase()) {
+    return Promise.reject('Only emails from "' + allowedDomain + '" are allowed.');
+  }
+
+  return Promise.resolve();
+};
+
+
 const rules = [
   {
     required: true,
     message: "required",
   },
 ];
+
+
+
+const emailRules = [
+  {
+    type: 'email',
+    message: 'Please enter a valid email address',
+  },
+  {
+    validator: validateEmailDomain,
+  },
+];
+
+
 function Register() {
   const navigate = useNavigate();
   const dispatch = useDispatch();
@@ -49,8 +86,8 @@ function Register() {
           <Form.Item label="Name" name="name" rules={rules}>
             <Input placeholder="Name" />
           </Form.Item>
-          <Form.Item label="Email" name="email" rules={rules}>
-            <Input placeholder="Email" />
+          <Form.Item label="Email" name="email" rules={emailRules}>
+            <Input placeholder="VIT Student Email" />
           </Form.Item>
           <Form.Item label="Password" name="password" rules={rules}>
             <Input type="password" placeholder="Password" />
