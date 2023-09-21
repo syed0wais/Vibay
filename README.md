@@ -18,4 +18,4 @@ Client folder:
 
 ## BMC
 
-<img src="https://github.com/syed0wais/archives/blob/master/Vibay/bmc-Vibay.png" >
+<img src="https://github.com/syed0wais/archives/blob/master/Vibay/bmc-Vibay.png"   width="600" height="400"> 
