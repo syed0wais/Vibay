@@ -17,16 +17,16 @@ function Login() {
   const dispatch = useDispatch();
   const onFinish = async (values) => {
     try {
-      dispatch(SetLoader(true))
-      const response = await LoginUser(values);
-      dispatch(SetLoader(false))
-      if (response.success) {
-        message.success(response.message);
-        localStorage.setItem("token", response.data);
+      // dispatch(SetLoader(true))
+      // const response = await LoginUser(values);
+      // dispatch(SetLoader(false))
+      // // if (response.success) {
+      //   message.success(response.message);
+      //   localStorage.setItem("token", response.data);
         window.location.href = "/";
-      } else {
-        throw new Error(response.message);
-      }
+      // } else {
+      //   throw new Error(response.message);
+      // }
     } catch (error) {
       dispatch(SetLoader(false))
       message.error(error.message);
@@ -37,6 +37,7 @@ function Login() {
     if (localStorage.getItem("token")) {
       navigate("/");
     }
+
   }, []);
   return (
     <div className="h-screen bg-primary flex justify-center items-center">

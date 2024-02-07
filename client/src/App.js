@@ -19,33 +19,33 @@ function App() {
           <Route
             path="/"
             element={
-              <ProtectedPage>
+            
                 <Home />
-              </ProtectedPage>
+              
             }
           />
           <Route
             path="/product/:id"
             element={
-              <ProtectedPage>
+              
                 <ProductInfo />
-              </ProtectedPage>
+              
             }
           />
           <Route
             path="/profile"
             element={
-              <ProtectedPage>
+              
                 <Profile />
-              </ProtectedPage>
+              
             }
           />
           <Route
             path="/admin"
             element={
-              <ProtectedPage>
+              
                 <Admin />
-              </ProtectedPage>
+              
             }
           />
           <Route path="/login" element={<Login />} />
